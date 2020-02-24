@@ -1,0 +1,48 @@
+1. Menghitung Resultan Gaya Mobil
+
+READ weight 600
+READ acceleration 2
+COMPUTE Resultan weight times acceleration
+DISPLAY Resultan
+
+2. Menghitung Tahun Kabisat
+
+READ year 2020
+IF year mod 4 THEN
+    DISPLAY "2020 is Leap year"
+    ELSE
+    DISPLAY "2020 is not Leap year"
+    ENDIF
+
+3. Laundry Day
+
+READ wash = 0
+WHILE wash < = 20
+    DISPLAY wash "Foxie washing"
+    COMPUTE wash add 1
+ENDWHILE
+DISPLAY wash " Foxie final washing"
+
+4. Periksa Kuku
+
+READ students
+
+CASE finger OF
+students have long nail : punnishment;
+students have short nail : reward:
+
+ENDCASE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
