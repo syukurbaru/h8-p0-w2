@@ -18,10 +18,10 @@ IF year mod 4 THEN
 
 READ wash = 0
 WHILE wash < = 20
-    DISPLAY wash "Foxie washing"
+    DISPLAY wash "Mechine not play"
     COMPUTE wash add 1
 ENDWHILE
-DISPLAY wash " Foxie final washing"
+DISPLAY wash " Foxie play machine"
 
 4. Periksa Kuku
 
