@@ -17,7 +17,7 @@ IF year mod 4 THEN
 3. Laundry Day
 
 READ wash = 0
-WHILE wash < = 20
+WHILE wash < 20
     DISPLAY wash "Mechine not play"
     COMPUTE wash add 1
 ENDWHILE
@@ -25,7 +25,7 @@ DISPLAY wash " Foxie play machine"
 
 4. Periksa Kuku
 
-READ students
+READ students = 20
 
 CASE finger OF
 students have long nail : punnishment;
