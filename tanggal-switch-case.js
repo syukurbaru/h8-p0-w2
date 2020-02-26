@@ -1,24 +1,37 @@
-var tanggal = parseInt(prompt("Masukan tanggal dari 1-31"));
-var bulan = parseInt(prompt("Masukan bulan dari 1-12"));
-var tahun = parseInt(prompt("Masukan tahun dari 1900-2200"));
+var tanggal = 21;
+var bulan = 1;
+var tahun = 1945;
 
-if (tanggal <= 31 && tahun <= 2200){
+switch(bulan){
+  case 1: {bulan ='Januari' 
+  break;}
+  case 2: {bulan ='Februari'
+  break;}
+  case 3: {bulan ='Maret'
+  break;}
+  case 4: {bulan ='April'
+  break;}
+  case 5: {bulan ='Mei'
+  break;}
+  case 6: {bulan ='Juni'
+  break;}
+  case 7: {bulan ='Juli'
+  break;}
+  case 8: {bulan ='Agustus'
+  break;}
+  case 9: {bulan ='September'
+  break;}
+  case 10: {bulan ='Oktober'
+  break;}
+  case 11: {bulan ='Nopember'
+  break;}
+  case 12: {bulan ='Desember'
+  break;}
+  
+}
 
-switch(bulan) {
-  case 1:   { console.log(tanggal + ' '+'Januari'+ ' ' + tahun); break; }
-  case 2:   { console.log(tanggal + ' '+'Februari'+ ' ' + tahun); break; }
-  case 3:   { console.log(tanggal + ' '+'Maret'+ ' ' + tahun); break; }
-  case 4:   { console.log(tanggal + ' '+'April'+ ' ' + tahun); break; }
-  case 5:   { console.log(tanggal + ' '+'Mei'+ ' ' + tahun); break; }
-  case 6:   { console.log(tanggal + ' '+'Juni'+ ' ' + tahun); break; }
-  case 7:   { console.log(tanggal + ' '+'Juli'+ ' ' + tahun); break; }
-  case 8:   { console.log(tanggal + ' '+'Agustus'+ ' ' + tahun); break; }
-  case 9:   { console.log(tanggal + ' '+'September'+ ' ' + tahun); break; }
-  case 10:   { console.log(tanggal + ' '+'Oktober'+ ' ' + tahun); break; }
-  case 11:   { console.log(tanggal + ' '+'Nopember'+ ' ' + tahun); break; }
-  case 12:   { console.log(tanggal + ' '+'Desember'+ ' ' + tahun); break; }
-  default:  { console.log('Bulan pakai angka 1-12'); }
+if ((tanggal > 0 && tanggal <= 31)&& (tahun >1900 && tahun <=2200)){
+console.log(tanggal +' '+bulan +' '+tahun)
+} else {
+  console.log ('Masukan angka yang benar')
 }
-}
-else { 
-  console.log('Salah memasukan angka!')}

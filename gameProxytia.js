@@ -1,70 +1,25 @@
-var nama = prompt('Siapa nama kamu (mikael, nina, danu atau zero?');
-var peran = prompt('Apa peranmu? ksatria, tabib atau penyihir?');
+var nama = 'zero';
+var peran = '';
 
-if(nama ==='' && peran === ''){
-    alert('Nama harus diisi!')
+if (!nama && !peran) {
+    console.log('Silahkan masukan nama')
 }
-
-//rule mikael
-if(nama === 'mikael' && peran === ''){
-    alert('Halo' + ' ' + nama + ' ' + 'Pilih peranmu untuk memulai game!' );
+else if(nama && !peran) {
+    console.log('Halo'+nama +'Pilih peranmu untuk memulai game!')
 }
-
-if(nama === 'mikael' && peran === 'ksatria'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu dapat menyerang dengan senjatamu' );
-    
+else if(nama && peran === 'ksatria'){
+    console.log('Selamat datang di dunia Proxyta '+nama)
+    console.log('Halo ' +peran +nama +'kamu dapat menyerang dengan senjatamu')
 }
-else if(nama === 'mikael' && peran==='tabib'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu akan membantu temanmu yang terluka' );
+else if(nama && peran === 'tabib'){
+    console.log('Selamat datang di dunia Proxyta '+nama)
+    console.log('Halo '+peran +nama +'kamu akan membantu temanmu yang terluka.')
 }
-else if (nama === 'mikael' && peran==='penyihir'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'ciptakan keajaiban yang membantu kemenangan' );
+else if(nama && peran === 'penyihir'){
+    console.log('Selamat datang di dunia Proxyta '+nama)
+    console.log('Halo ' +peran +nama +'kamu dapat menyerang dengan senjatamu')
 }
-
-//rule nina
-if(nama === 'nina' && peran === ''){
-    alert('Halo' + ' ' + nama + ' ' + 'Pilih peranmu untuk memulai game!' );
+else {
+    console.log('Peran yang kamu tulis tidak tersedia')
 }
 
-if(nama === 'nina' && peran === 'ksatria'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu dapat menyerang dengan senjatamu' );
-    
-}
-else if(nama === 'nina' && peran==='tabib'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu akan membantu temanmu yang terluka' );
-}
-else if (nama === 'nina' && peran==='penyihir'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'ciptakan keajaiban yang membantu kemenangan' );
-}
-
-//rule danu
-if(nama === 'danu' && peran === ''){
-    alert('Halo' + ' ' + nama + ' ' + 'Pilih peranmu untuk memulai game!' );
-}
-
-if(nama === 'danu' && peran === 'ksatria'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu dapat menyerang dengan senjatamu' );
-    
-}
-else if(nama === 'danu' && peran==='tabib'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu akan membantu temanmu yang terluka' );
-}
-else if (nama === 'danu' && peran==='penyihir'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'ciptakan keajaiban yang membantu kemenangan' );
-}
-
-//rule zero
-if(nama === 'zero' && peran === ''){
-    alert('Halo' + ' ' + nama + ' ' + 'Pilih peranmu untuk memulai game!' );
-}
-
-if(nama === 'zero' && peran === 'ksatria'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu dapat menyerang dengan senjatamu' );
-    
-}
-else if(nama === 'zero' && peran==='tabib'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'Kamu akan membantu temanmu yang terluka' );
-}
-else if (nama === 'zero' && peran==='penyihir'){
-    alert('Selamat datang di Dunia Proxytia' + ' ' + nama + '\n' + ' ' + 'Halo' + ' ' + peran + ' ' + nama + ', ' + 'ciptakan keajaiban yang membantu kemenangan' );
-}
