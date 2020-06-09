@@ -1,3 +1,5 @@
+// Membuat tugas Basic Function
+
 // Tugas 1
 
 function shoutOut(){
